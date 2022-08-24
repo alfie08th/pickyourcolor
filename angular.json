@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "whatstocktobuy": {
+    "pickyourcolor": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/whatstocktobuy",
+            "outputPath": "dist/pickyourcolor",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "whatstocktobuy:build"
+            "browserTarget": "pickyourcolor:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "whatstocktobuy:build:production"
+              "browserTarget": "pickyourcolor:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "whatstocktobuy:build"
+            "browserTarget": "pickyourcolor:build"
           }
         },
         "test": {
@@ -116,16 +116,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "whatstocktobuy:serve"
+            "devServerTarget": "pickyourcolor:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "whatstocktobuy:serve:production"
+              "devServerTarget": "pickyourcolor:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "whatstocktobuy"
+  "defaultProject": "pickyourcolor",
+  "cli": {
+    "analytics": "a5cbc6c1-5970-44bd-bad7-2df33688d613"
+  }
 }
